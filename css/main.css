@@ -1,1 +1,112 @@
-
+body {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial,sans-serif;
+}
+/*clases reutilizables*/
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+/*header*/
+header{
+  width: 100%;
+  height: 40px;
+  background-color: #026aa7;
+  overflow: hidden;
+}
+#button-header{
+  margin-top: 5px;
+  margin-left: 8px;
+  padding:1px 8px;
+  background-color: #4e97c2;
+  display: inline-block;
+  text-align: center;
+}
+div a{
+  text-decoration: none;
+  text-align: center;
+}
+.fa-trello,.fa-search,.fa-plus,.fa-info,.fa-bell-o,.fa-star-o,.fa-user-secret{
+  color: #fff;
+}
+.header-btn-text{
+  color: #fff;
+  line-height: 30px;
+  font-weight: 700;
+}
+#button-search{
+  height: 20px;
+  margin-top: 2px;
+  margin-left: 8px;
+  padding:4px 9px;
+  background-color: #4e97c2;
+  display: inline-block;
+  text-align: center;
+}
+#input-text{
+  text-decoration: none;
+  background-color: #4e97c2;
+  border: none;
+}
+img[alt="logo"]{
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+}
+.logo{
+  position: absolute;
+  text-align: center;
+  display:block;
+  top: -5px;
+  left: 50%;
+}
+#button-user{
+  float: right;
+  margin-right: 9px;
+}
+#button-user div{
+  display: inline-block;
+}
+#icon{
+  margin-left: 10px;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding:3px 8px;
+  background-color: #4e97c2;
+}
+.user{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5.5px;
+  margin-left: 8px;
+  background-color: #d6dadc;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+}
+/*primera Seccion*/
+section{
+  width: 100%;
+  height: 1000px;
+  margin: 0;
+  padding: 0;
+  background-color: #1da1f2;
+}
+#container{
+  width: 100%;
+  height: 1000px;
+}
+section #tablero{
+  padding-top: 20px;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+#tablero a{
+  margin-left: 25px;
+}
