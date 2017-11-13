@@ -110,3 +110,17 @@ section #tablero{
 #tablero a{
   margin-left: 25px;
 }
+.container{
+  width: 11%;
+  height: 25px;
+  display: inline-block;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-left: 70px;
+  padding-left: 20px;
+  background-color: #d6dadc;
+}
+.container input{
+  border: none;
+  background-color: #d6dadc;
+}
