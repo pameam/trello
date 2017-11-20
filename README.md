@@ -37,4 +37,4 @@ El reto consiste en replicar replicar el newsfeed de Trello
 * Poder agregar múltiples listas con tarjetas. Para esto, el formulario de "Añadir una lista" debe aparecer a la derecha de la lista anteriormente creada.
 
 ## Pseudocodigo
-![trello](assets/images/Pseudocodigo.jpg)
+![trello](assets/images/pseudocodigo.jpg)
