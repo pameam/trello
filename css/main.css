@@ -48,9 +48,10 @@ div a{
   text-align: center;
 }
 #input-text{
-  text-decoration: none;
   background-color: #4e97c2;
   border: none;
+  outline:0px;
+  width: 127px;
 }
 img[alt="logo"]{
   width: 80px;
@@ -104,8 +105,9 @@ section{
 section #tablero{
   padding-top: 20px;
   margin-left: 20px;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 #tablero a{
   margin-left: 25px;
@@ -114,13 +116,61 @@ section #tablero{
   width: 11%;
   height: 25px;
   display: inline-block;
-  background-color: #fff;
-  margin-top: 20px;
-  margin-left: 70px;
+  margin-left: 10px;
   padding-left: 20px;
-  background-color: #d6dadc;
 }
-.container input{
-  border: none;
+.star{
+  width: 250px;
   background-color: #d6dadc;
+  border: none;
+  outline:0px;
+  border-radius: 5px;
+  padding: 7px;
+  text-align: left;
+}
+.star:hover{
+  background:#026aa7;
+  color:#ffffff;
+}
+#hidden{
+  display: none;
+}
+.hidden{
+  display: none;
+}
+#append{
+  background-color: #32cd32;
+  color:#ffffff;
+  width: 80px;
+  height: 30px;
+  display: inline-block;
+  border:none;
+  outline: 0px;
+  font-size: bold;
+  margin-top: 4px;
+}
+.form-list{
+  background: #e2e4e6;
+  width: 270px;
+  padding: 4px;
+  border-radius: 3px;
+  margin: 0 10px;
+  display: none;
+}
+.show{
+  display: inline-block;
+}
+#inputList{
+  width: 255px;
+  padding: 7px;
+  border: 1px solid #aaa;
+  background: rgba(0, 0, 0, .05);
+  text-align: left;
+  border-radius: 3px;
+  color: black;
+}
+p{
+  width: 100px;
+  height: 20px;
+  background-color: red;
 }
