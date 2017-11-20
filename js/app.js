@@ -22,6 +22,25 @@ window.addEventListener('load', function() {
 // Versión 0.0.2
 // Al dar click en el botón de "Guardar", se mostrará un nuevo cuadro donde estará el nombre de la lista agregada.
 // Mostrar un texto de "Añadir una tarea" dentro de la lista.
+var newButton = document.body.children[2].children[1].children[0].children[2];
+newButton.addEventListener('click', function(event) {
+  // containerList.classList.add('hidden');
+  var containerList = document.body.children[2].children[1];
+  message = document.body.children[2].children[1].children[0].children[0].value;
+  var divLista = document.createElement('div');
+  divLista.innerHTML = message;
+  divLista.classList.add('divLista');
+  var addTarget = document.createElement('a');
+  document.body.children[2].appendChild(divLista);
+  document.body.children[2].appendChild(addTarget);
+  addTarget.setAttribute('href', '#');
+  addTarget.setAttribute('id', 'addTarget');
+  addTarget.innerHTML = 'Añadir una tarjeta...';
+  addTarget.classList.add('addTarget');
+  message = '';
+  containerList.classList.add('floatleft');
+  event.preventDefault();
+});
 
 // Versión 0.0.3
 //

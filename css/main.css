@@ -184,3 +184,34 @@ img[alt="logo"]{
 .fa-times{
   color:#000;
 }
+.floatleft{
+  display: inline-block;
+  position: absolute;
+  left: 300px;
+}
+.addTarget{
+   width: 270px;
+   height: 34px;
+   background:#e2e4e6;
+   color: #4d4d4d;
+   display: block;
+   border-radius: 0  0 5px 5px;
+   margin-left: 10px;
+   font-size:14px;
+   line-height: 20px;
+   padding: 7px;
+   text-decoration:none;
+}
+.divLista{
+  width: 270px;
+  height:auto;
+  background:#e2e4e6;
+  color: black;
+  display:block;
+  border-radius: 5px  5px 0px 0px;
+  margin-left: 10px;
+  font-size:14px;
+  line-height: 20px;
+  padding: 7px;
+  word-wrap: break-word;
+}
