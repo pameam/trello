@@ -3,6 +3,7 @@ body {
   margin:0;
   padding:0;
   font-family:Arial,sans-serif;
+  background-color: #1da1f2;
 }
 /*clases reutilizables*/
 .text-capitalize {
@@ -91,18 +92,17 @@ img[alt="logo"]{
   font-size: 12px;
 }
 /*primera Seccion*/
-section{
+#first{
   width: 100%;
-  height: 1000px;
+  height: 60px;
   margin: 0;
   padding: 0;
-  background-color: #1da1f2;
 }
-#container{
+#container-text{
   width: 100%;
-  height: 1000px;
+  height: 60px;
 }
-section #tablero{
+#first #tablero{
   padding-top: 20px;
   margin-left: 20px;
   color: #ffffff;
@@ -111,6 +111,13 @@ section #tablero{
 }
 #tablero a{
   margin-left: 25px;
+}
+/*segunda Seccion*/
+#second{
+  width: 100%;
+  height: 800px;
+  margin: 0;
+  padding: 0;
 }
 .container{
   width: 11%;
@@ -138,12 +145,20 @@ section #tablero{
 .hidden{
   display: none;
 }
+.show{
+  display: inline-block;
+}
+#container-list{
+  width: 270px;
+  padding: 4px;
+  border-radius: 3px;
+  margin: 0 10px;
+}
 #append{
   background-color: #32cd32;
   color:#ffffff;
   width: 80px;
   height: 30px;
-  display: inline-block;
   border:none;
   outline: 0px;
   font-size: bold;
@@ -152,15 +167,12 @@ section #tablero{
 .form-list{
   background: #e2e4e6;
   width: 270px;
+  height: auto;
   padding: 4px;
   border-radius: 3px;
   margin: 0 10px;
-  display: none;
 }
-.show{
-  display: inline-block;
-}
-#inputList{
+.inputList{
   width: 255px;
   padding: 7px;
   border: 1px solid #aaa;
@@ -169,8 +181,6 @@ section #tablero{
   border-radius: 3px;
   color: black;
 }
-p{
-  width: 100px;
-  height: 20px;
-  background-color: red;
+.fa-times{
+  color:#000;
 }

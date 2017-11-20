@@ -26,15 +26,21 @@
         <div class="user"><a href="">PM</i></a></div>
       </div>
     </header>
-    <section>
-      <div id="container">
+    <section id="first">
+      <div id="container-text">
         <div id="tablero">Tablero - Reto de Código <a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-user-secret" aria-hidden="true"> Privado</i></a> </div>
-        <div class="container">
-            <button type="button" name="button" class="star"> Añadir una lista...</button>
-        </div>
-        <div class="container-list">
-          <form class="form-list"action=""method="post"></form>
-        </div>
+      </div>
+    </section>
+    <section id="second">
+      <div class="container">
+          <button type="button" name="button" class="star"> Añadir una lista...</button>
+      </div>
+      <div id="container-list">
+        <form class="form-list"action=""method="post">
+          <input class="inputList" type="text" id="inputList" placeholder="Añadir una lista...."><br>
+          <button class="append" type="submit" id="append">Guardar</button>
+          <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+        </form>
       </div>
     </section>
     <script type="text/javascript" src="js/app.js"></script>
