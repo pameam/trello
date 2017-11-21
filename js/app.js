@@ -63,14 +63,13 @@ newButton.addEventListener('click', function(event) {
       var texto = document.getElementsByClassName('textarea').value;
       var work = document.createElement('p');
       var textWork = document.createTextNode(texto);
+      work.setAttribute('class', 'work');
       divLista.insertBefore(work, formAdd);
       textarea.value = '';
     });
   });
 });
 // Versión 0.0.5
-//
 // Mostrar el formulario nuevamente debajo de la última tarea añadida.
 // Versión 0.0.6 (Extra)
-//
 // Poder agregar múltiples listas con tarjetas. Para esto, el formulario de "Añadir una lista" debe aparecer a la derecha de la lista anteriormente creada.

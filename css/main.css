@@ -233,5 +233,8 @@ img[alt="logo"]{
 .textarea{
   width:265px;
   margin-right:10px;
-
+}
+.work{
+  background-color: red;
+  margin-bottom: 5px;
 }
