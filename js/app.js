@@ -35,20 +35,39 @@ newButton.addEventListener('click', function(event) {
   document.body.children[2].appendChild(addTarget);
   addTarget.setAttribute('href', '#');
   addTarget.setAttribute('id', 'addTarget');
-  addTarget.innerHTML = 'Añadir una tarjeta...';
+  addTarget.innerHTML = 'Añadir una tarea...';
   addTarget.classList.add('addTarget');
-  message = '';
   containerList.classList.add('floatleft');
+  document.body.children[2].children[1].children[0].children[0].value = '';
   event.preventDefault();
+  // Versión 0.0.3
+  // Al dar click en "Añadir una tarea", deberá mostrar un formulario con un textarea y
+  // un botón que diga "Añadir".
+  addTarget.addEventListener('click', function() {
+    var formAdd = document.createElement('form');
+    var textarea = document.createElement('textarea');
+    var buttonTextarea = document.createElement('div');
+    document.body.children[2].children[2].appendChild(formAdd);
+    document.body.children[2].children[2].children[0].appendChild(textarea);
+    document.body.children[2].children[2].children[0].appendChild(buttonTextarea);
+    formAdd.setAttribute('class', 'formAdd');
+    textarea.setAttribute('class', 'textarea');
+    buttonTextarea.setAttribute('class', 'buttonTextarea');
+    buttonTextarea.innerHTML = 'Añadir';
+    // document.body.children[2].children[2]//<div class="divLista">hfgj</div>
+    // Versión 0.0.4
+    // Poner focus al input al dar click en "Agregar nueva tarea".
+    // Al dar click en el botón de "Añadir", deberá aparecer el texto de la tarea debajo del título de la lista.
+    textarea.focus();
+    buttonTextarea.addEventListener('click', function() {
+      var texto = document.getElementsByClassName('textarea').value;
+      var work = document.createElement('p');
+      var textWork = document.createTextNode(texto);
+      divLista.insertBefore(work, formAdd);
+      textarea.value = '';
+    });
+  });
 });
-
-// Versión 0.0.3
-//
-// Al dar click en "Añadir una tarea", deberá mostrar un formulario con un textarea y un botón que diga "Añadir".
-// Versión 0.0.4
-//
-// Poner focus al input al dar click en "Agregar nueva tarea".
-// Al dar click en el botón de "Añadir", deberá aparecer el texto de la tarea debajo del título de la lista.
 // Versión 0.0.5
 //
 // Mostrar el formulario nuevamente debajo de la última tarea añadida.

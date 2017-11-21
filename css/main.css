@@ -200,7 +200,6 @@ img[alt="logo"]{
    font-size:14px;
    line-height: 20px;
    padding: 7px;
-   text-decoration:none;
 }
 .divLista{
   width: 270px;
@@ -214,4 +213,25 @@ img[alt="logo"]{
   line-height: 20px;
   padding: 7px;
   word-wrap: break-word;
+}
+.buttonTextarea{
+  background-color: #32cd32;
+  color:#ffffff;
+  width: 80px;
+  height: 30px;
+  padding-top: 5px;
+  border:none;
+  outline: 0px;
+  font-size: bold;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+}
+.formAdd{
+ width: 100%;
+}
+.textarea{
+  width:265px;
+  margin-right:10px;
+
 }
